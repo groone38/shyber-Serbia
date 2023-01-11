@@ -4,7 +4,9 @@ export const OpenFormContext = React.createContext();
 
 export const OpenFormProvider = ({ children }) => {
   const [openForm, setOpenForn] = useState(false);
-  const toggleForm = () => setOpenForn((prev) => !prev);
+  const toggleForm = () => {
+    setOpenForn((prev) => !prev);
+  };
   return (
     <OpenFormContext.Provider
       value={{
