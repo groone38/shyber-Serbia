@@ -1,0 +1,90 @@
+.stage {
+    background-color: $white;
+    padding-bottom: 0.1px;
+    padding-top: 200px;
+
+    @media screen and ($tablet) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media ($mobile) {
+        padding-top: 183px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &__main {
+        position: relative;
+
+        .btn-mobile {
+            display: none;
+
+            @media ($mobile) {
+                display: block;
+                margin: 0;
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        @include h1();
+
+        @media ($tablet) {
+            width: 638px;
+        }
+
+        @media ($mobile) {
+            width: auto;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__greetings {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 760px;
+
+        @media ($tablet) {
+            width: 460px;
+        }
+
+        @media ($mobile) {
+            position: relative;
+            flex-direction: column;
+            gap: 30px;
+            width: auto;
+        }
+
+        p {
+            @include p1(600)
+        }
+
+        p:last-child {
+            width: 465px;
+            @include p1();
+
+            @media ($tablet) {
+                width: 309px;
+            }
+        }
+    }
+
+    &__transition {
+        @include h1();
+        text-align: center;
+        margin-top: 300px;
+        margin-bottom: 100px;
+
+        @media ($mobile) {
+            margin-top: 90px;
+            margin-bottom: 30px;
+        }
+    }
+}

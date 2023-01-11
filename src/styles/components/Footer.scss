@@ -1,0 +1,62 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    @media screen and ($tablet) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media screen and ($mobile) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &__privat {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey;
+
+            @media ($mobile) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and ($mobile) {
+            gap: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey;
+            margin-right: 40px;
+
+            @media ($mobile) {
+                font-size: 12px;
+                margin-right: 30px;
+            }
+        }
+
+        &-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #D9D9D9;
+
+            @media ($mobile) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

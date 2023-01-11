@@ -1,0 +1,14 @@
+@import './utils';
+@import './components';
+
+.conteiner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.back {
+    background-color: $white;
+}
+
+.main {}

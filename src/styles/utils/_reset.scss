@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    // font-size: 10px;
+    font-family: $mainFonts;
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $headlinesFonts;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
